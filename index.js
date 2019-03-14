@@ -1,20 +1,20 @@
 // ENTRY FILE
 
-const server = require('./lib/server');
-const cli = require('./lib/cli');
+const server = require('./lib/server')
+const cli = require('./lib/cli')
 
 // Define App
-const app = {};
+const app = {}
 
 // app init
 app.init = () => {
   // server init
-  server.init();
+  server.init()
 
   // cli init
   setTimeout(()=>{
-    cli.init();
+    cli.init()
   },50)
-};
+}
 
-app.init();
+app.init()
